@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamal’s CyberGrid</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <nav>
+        <ul>
+            <li><a href="#personal" data-label="Cyber Core" class="nav-link"></a></li>
+            <li><a href="#gallery" data-label="Accomplishment Gallery" class="nav-link"></a></li>
+            <li><a href="#projects" data-label="Code Grid" class="nav-link"></a></li>
+            <li><a href="#videos" data-label="Media Node" class="nav-link"></a></li>
+            <li><a href="#blog" data-label="Future Interface" class="nav-link"></a></li>
+            <li><a href="#social" data-label="Network Hub" class="nav-link"></a></li>
+        </ul>
+    </nav>
+    
+
+     <div class="theme-switcher">
+        <select id="theme-switcher">
+            <option value="turquoise">Electric Turquoise</option>
+            <option value="purple">Cyber Purple</option>
+            <option value="pink">Neon Pink</option>
+            <option value="dark-black">Dark Black</option>
+            <option value="neon-green">Neon Green</option>
+        </select>
+    </div> 
+
+
+    <!-- Main Content -->
+    <main>
+        <section id="hero">
+            <div class="digital-pulse"></div>
+            <div class="hero-content">
+                <section id="hero1">
+                    <div class="hero-image-container">
+                      <img src="df.png" alt="Your Name" class="hero-image">
+                    </div>
+                  </section>
+                <h1>Welcome to Kamal’s CyberGrid</h1>
+                <p>Enter my next-gen developer space</p>
+                <button>Enter the Matrix</button>
+            </div>
+        </section>
+       
+
+        <section id="personal">
+            <h1> Cyber Core - About Me</h1>
+            <figure>
+                <img src="df.png" alt="My digital avatar">
+                <figcaption>My digital avatar</figcaption>
+            </figure>
+            <p>Hi, I’m Komal, a full-stack developer shaping the future of the web. I build innovative solutions with a passion for code and design. <br> I am currently learning as well as implementing my skills in web development trying to be better than what i was ever.</p>
+        </section>
+
+        <section id="gallery">
+            <h1>Accomplishment Gallery</h1>
+            <div class="gallery-folders">
+                <div class="folder" data-target="image-gallery">
+                    <h2>Image Gallery</h2>
+                    <p>View my social gatherings and work events.</p>
+                </div>
+                <div class="folder" data-target="certificate-gallery">
+                    <h2>Certificate Gallery</h2>
+                    <p>Explore my online certifications.</p>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Hidden Image Gallery Section -->
+        <section id="image-gallery" class="gallery-page hidden">
+            <h1>Image Gallery</h1>
+            <div class="image-grid">
+                <img src="image1.jpg" alt="Social Gathering 1" data-index="0">
+                <img src="image2.jpg" alt="Work Event 1" data-index="1">
+                <img src="image3.jpg" alt="Social Gathering 2" data-index="2">
+                <!-- Add more images as needed -->
+            </div>
+            <button class="back-button">Back to Gallery</button>
+        </section>
+    
+        <!-- Hidden Certificate Gallery Section -->
+        <section id="certificate-gallery" class="gallery-page hidden">
+            <h1>Certificate Gallery</h1>
+            <div class="certificate-grid">
+                <img src="c1.jpg" alt="Certificate 1" data-index="0">
+                <img src="c2.jpg" alt="Certificate 2" data-index="1">
+                <img src="c3.jpg" alt="Certificate 3" data-index="2">
+                <img src="c4.jpg" alt="Certificate 3" data-index="2">
+                <!-- Add more certificates as needed -->
+            </div>
+            <button class="back-button">Back to Gallery</button>
+        </section>
+
+
+        <section id="projects">
+            <h1>Code Grid - My Work</h1>
+            <div class="project-grid">
+                <div class="project-card">
+                    <figure>
+                        <img src="c1.jpg" alt="Project 1 screenshot">
+                        <figcaption>Project 1 screenshot</figcaption>
+                    </figure>
+                    <div class="project-info">
+                        <h2>Project 1</h2>
+                        <p>A full-stack app with HTML, CSS, Node.js.</p>
+                        <a href="https://your-project1-url.com" target="_blank">View Live</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <figure>
+                        <img src="c2.jpg" alt="Project 2 screenshot">
+                        <figcaption>Project 2 screenshot</figcaption>
+                    </figure>
+                    <div class="project-info">
+                        <h2>Project 2</h2>
+                        <p>A responsive portfolio site.</p>
+                        <a href="https://your-project2-url.com" target="_blank">View Live</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <figure>
+                        <img src="c1.jpg" alt="Project 3 screenshot">
+                        <figcaption>Project 3 screenshot</figcaption>
+                    </figure>
+                    <div class="project-info">
+                        <h2>Project 3</h2>
+                        <p>Another amazing project.</p>
+                        <a href="https://your-project3-url.com" target="_blank">View Live</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <figure>
+                        <img src="project4.jpg" alt="Project 4 screenshot">
+                        <figcaption>Project 4 screenshot</figcaption>
+                    </figure>
+                    <div class="project-info">
+                        <h2>Project 4</h2>
+                        <p>Yet another project.</p>
+                        <a href="https://your-project4-url.com" target="_blank">View Live</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+        <section id="videos">
+            <h1>Media Node - My Creations</h1>
+            <p>Explore my latest videos showcasing projects, tutorials, and more.</p>
+            <div class="video-carousel">
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SrJXHEv5fUc?si=iOQmUncL_n80SQUX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        <h3>Video Title 1</h3>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+                        <h3>Video Title 2</h3>
+                    </div>
+                    <!-- Add more slides as needed -->
+                </div>
+                <button class="carousel-control prev">‹</button>
+                <button class="carousel-control next">›</button>
+            </div>
+        </section>
+        <section id="blog">
+            <h1>Future Interface - My Vision</h1>
+            <ul class="vision-list">
+                <li>I aim to master AI-driven web development to create intelligent, adaptive interfaces.</li>
+                <li>My goal is to launch a startup that redefines digital innovation by 2027.</li>
+                <li>I plan to integrate machine learning into real-time user experiences.</li>
+                <li>Building sustainable, eco-friendly tech solutions is a priority for me.</li>
+                <li>I want to mentor aspiring developers and contribute to open-source projects.</li>
+                <li>Exploring virtual reality for immersive web applications excites me.</li>
+                <li>I envision creating tools that simplify complex workflows for businesses.</li>
+                <li>Ultimately, I’ll push the boundaries of what the web can achieve.</li>
+            </ul>
+        </section>
+
+        <section id="social">
+            <h1>Network Hub - Connect with Me</h1>
+            <div class="social-container">
+                <!-- First Row: Facebook, GitHub, X -->
+                <div class="social-row">
+                    <a href="https://facebook.com/yourprofile" target="_blank" title="Facebook">
+                        <img src="facebook.png" alt="Facebook" class="social-icon">
+                    </a>
+                    <a href="https://github.com/yourprofile" target="_blank" title="GitHub">
+                        <img src="github.png" alt="GitHub" class="social-icon">
+                    </a>
+                    <a href="https://x.com/yourprofile" target="_blank" title="X">
+                        <img src="x.png" alt="X" class="social-icon">
+                    </a>
+                </div>
+                <!-- Second Row: LinkedIn and Gmail with text -->
+                <div class="social-row">
+                    <div class="social-item">
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">
+                            <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+                        </a>
+                        <span class="social-text">Click for job queries</span>
+                    </div>
+                    <div class="social-item">
+                        <a href="mailto:your.email@gmail.com" title="Email">
+                            <img src="mail.png" alt="Gmail" class="social-icon">
+                        </a>
+                        <span class="social-text">Feel free to write me a mail!</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright Statement -->
+            <p class="copyright">© 2025 Komal. All rights reserved.</p>
+        </section>
+       
+    </main>
+
+<!-- Lightbox Modal for Image Gallery -->
+<div id="lightbox" class="lightbox hidden">
+    <span class="close">&times;</span>
+    <img src="" alt="Lightbox Image" class="lightbox-image">
+    <button class="prev">Previous</button>
+    <button class="next">Next</button>
+</div>
+
+<!-- Certificate Viewer Modal -->
+<div id="certificate-viewer" class="certificate-viewer hidden">
+    <span class="close">&times;</span>
+    <img src="" alt="Certificate" class="certificate-viewer-image">
+    <button class="prev">Previous</button>
+    <button class="next">Next</button>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
