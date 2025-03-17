@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
  // Typing Animation for Future Interface
  const visionItems = document.querySelectorAll('.vision-list li');
- const typingSpeed = 50; // Milliseconds per character (approx. 5-6 chars/sec)
+ const typingSpeed = 12; // Milliseconds per character (approx. 5-6 chars/sec)
  let delay = 0;
 
  visionItems.forEach((item, index) => {

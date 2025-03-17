@@ -666,7 +666,7 @@ figcaption {
 .vision-list {
     list-style: none; /* Remove default bullets */
     padding: 0;
-    max-width: 800px; /* Limit width for readability */
+    max-width: 1020px; /* Limit width for readability */
     margin: 20px auto;
 }
 
