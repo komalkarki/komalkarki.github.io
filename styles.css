@@ -244,7 +244,7 @@ p{
 #personal img {
     border-radius: 50%;
     border: 3px solid var(--accent-color);
-    width: 180px;
+    width: 220px;
     box-shadow: 0 0 15px var(--accent-color);
     transition: transform 0.3s ease;
     margin-top: auto;
@@ -351,6 +351,7 @@ p{
 }
 
 /* Lightbox Modal */
+
 .lightbox {
     position: fixed;
     top: 0;
@@ -360,10 +361,17 @@ p{
     background: rgba(0, 0, 0, 0.9);
     z-index: 1002;
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
 }
 
+.lightbox-caption {
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+}
 .lightbox.hidden {
     display: none;
 }

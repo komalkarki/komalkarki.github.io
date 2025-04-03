@@ -47,6 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextButton = document.querySelector('.next');
     const certificateViewer = document.getElementById('certificate-viewer');
     const certificateViewerImage = document.querySelector('.certificate-viewer-image');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');  // Select caption element
+    const images = document.querySelectorAll('#image-gallery img');
+    let currentImageIndex = 0;
 
     // Open Gallery Pages
     folders.forEach(folder => {
@@ -65,36 +68,39 @@ document.addEventListener('DOMContentLoaded', () => {
             certificateViewer.classList.add('hidden');
         });
     });
-
-    // Image Gallery Lightbox
-    let currentImageIndex = 0;
-    const images = document.querySelectorAll('#image-gallery img');
-    images.forEach((img, index) => {
-        img.addEventListener('click', () => {
-            currentImageIndex = index;
-            lightbox.classList.remove('hidden');
+        // Open lightbox on image click
+        images.forEach((img, index) => {
+            img.addEventListener('click', () => {
+                currentImageIndex = index;
+                lightbox.classList.remove('hidden');
+                updateLightboxImage();
+            });
+        });
+    
+        // Close lightbox
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.add('hidden');
+        });
+    
+        // Previous image
+        prevButton.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
             updateLightboxImage();
         });
-    });
-
-    closeLightbox.addEventListener('click', () => {
-        lightbox.classList.add('hidden');
-    });
-
-    prevButton.addEventListener('click', () => {
-        currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-        updateLightboxImage();
-    });
-
-    nextButton.addEventListener('click', () => {
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-        updateLightboxImage();
-    });
-
-    function updateLightboxImage() {
-        lightboxImage.src = images[currentImageIndex].src;
-        lightboxImage.alt = images[currentImageIndex].alt;
-    }
+    
+        // Next image
+        nextButton.addEventListener('click', () => {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            updateLightboxImage();
+        });
+    
+        // Update lightbox content
+        function updateLightboxImage() {
+            lightboxImage.src = images[currentImageIndex].src;
+            lightboxImage.alt = images[currentImageIndex].alt;
+            // Set caption to data-caption if available, otherwise use alt
+            lightboxCaption.textContent = images[currentImageIndex].getAttribute('data-caption') || images[currentImageIndex].alt;
+        }
 
     // Certificate Gallery Viewer
     let currentCertIndex = 0;

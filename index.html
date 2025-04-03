@@ -42,7 +42,7 @@
                       <img src="df.png" alt="Your Name" class="hero-image">
                     </div>
                   </section>
-                <h1>Welcome to Kamal’s CyberGrid</h1>
+                <h1>Welcome to Komal’s CyberGrid</h1>
                 <p>Enter my next-gen developer space</p>
                 <button>Enter the Matrix</button>
             </div>
@@ -52,10 +52,10 @@
         <section id="personal">
             <h1> Cyber Core - About Me</h1>
             <figure>
-                <img src="df.png" alt="My digital avatar">
-                <figcaption>My digital avatar</figcaption>
+                <img src="dp.JPG" alt="">
+               
             </figure>
-            <p>Hi, I’m Komal, a full-stack developer shaping the future of the web. I build innovative solutions with a passion for code and design. <br> I am currently learning as well as implementing my skills in web development trying to be better than what i was ever.</p>
+            <p>Hi, I’m Komal, a full-stack developer shaping the future of the web. I build innovative solutions with a passion for code and design. <br> I am currently learning as well as implementing my skills in web development trying to be better than what i was ever. <br> I also have plans on pursuing Data analytics as my major academic and working on the same field to build my future carrier. My intrests are learning  <br>new things, enhancing my existing skills and contuniously working to meet my better future self.</p>
         </section>
 
         <section id="gallery">
@@ -76,14 +76,25 @@
         <section id="image-gallery" class="gallery-page hidden">
             <h1>Image Gallery</h1>
             <div class="image-grid">
-                <img src="image1.jpg" alt="Social Gathering 1" data-index="0">
-                <img src="image2.jpg" alt="Work Event 1" data-index="1">
-                <img src="image3.jpg" alt="Social Gathering 2" data-index="2">
+                <img src="exhibition.jpg" alt="This is an image of 2025 february where we participated to a Province level Science exhibition and secured the Second position with a project of automatic transport and storage system for agricultural industry.I proudly led the team for the competition. " data-index="0">
+                <img src="exhibition2.jpg" alt="This was the moment where our honourable principal sir was expressing his gratitute to our team for the win." data-index="1">
+                <img src="orientation.jpg" alt="This is an image of the very first orientation of the IT club done by me as the newly elected President of the club. It was a brief presentation about our goals, principles, introduction to our club members and upcoming event calender for the year. " data-index="2"> 
+                <img src="robotics.jpg" alt="This was a district level robotics program where we praticipated and fought till the semi finals. Although we didn't win the event it was a fabulous oppourtunity for us to learn and gain skills in the relevant field." data-index="3">
+                <img src="workshop.jpg" alt="This was our first workshop led by me on the topic of Artificial intelligence and Its uses for students where we gather more than 100 of students and provided them training and knowledge." data-index="4">
+                <img src="workshop2.jpg" alt="This is an image of the same workshop that we took at the time of our last day after certificate distribution." data-index="5">
                 <!-- Add more images as needed -->
             </div>
             <button class="back-button">Back to Gallery</button>
+            <!-- Lightbox Modal for Image Gallery -->
+<div id="lightbox" class="lightbox hidden">
+    <span class="close">×</span>
+    <img class="lightbox-image" src="" alt="">
+    <p class="lightbox-caption"></p>
+    <button class="prev">Previous</button>
+    <button class="next">Next</button>
+</div>
+</div>
         </section>
-    
         <!-- Hidden Certificate Gallery Section -->
         <section id="certificate-gallery" class="gallery-page hidden">
             <h1>Certificate Gallery</h1>
@@ -91,10 +102,21 @@
                 <img src="c1.jpg" alt="Certificate 1" data-index="0">
                 <img src="c2.jpg" alt="Certificate 2" data-index="1">
                 <img src="c3.jpg" alt="Certificate 3" data-index="2">
-                <img src="c4.jpg" alt="Certificate 3" data-index="2">
+                <img src="c4.jpg" alt="Certificate 3" data-index="3">
                 <!-- Add more certificates as needed -->
             </div>
             <button class="back-button">Back to Gallery</button>
+            <!-- Certificate Viewer Modal -->
+<div id="certificate-viewer" class="certificate-viewer hidden">
+    <span class="close">&times;</span>
+    <img src="" alt="Certificate" class="certificate-viewer-image">
+    <button class="prev">Previous</button>
+    <button class="next">Next</button><!-- Certificate Viewer Modal -->
+    <div id="certificate-viewer" class="certificate-viewer hidden">
+        <span class="close">&times;</span>
+        <img src="" alt="Certificate" class="certificate-viewer-image">
+        <button class="prev">Previous</button>
+        <button class="next">Next</button>
         </section>
 
 
@@ -103,7 +125,7 @@
             <div class="project-grid">
                 <div class="project-card">
                     <figure>
-                        <img src="c1.jpg" alt="Project 1 screenshot">
+                        <img src="1.jpg" alt="Project 1 screenshot">
                         <figcaption>Project 1 screenshot</figcaption>
                     </figure>
                     <div class="project-info">
@@ -114,7 +136,7 @@
                 </div>
                 <div class="project-card">
                     <figure>
-                        <img src="c2.jpg" alt="Project 2 screenshot">
+                        <img src="c.jpg" alt="Project 2 screenshot">
                         <figcaption>Project 2 screenshot</figcaption>
                     </figure>
                     <div class="project-info">
@@ -125,7 +147,7 @@
                 </div>
                 <div class="project-card">
                     <figure>
-                        <img src="c1.jpg" alt="Project 3 screenshot">
+                        <img src="c.jpg" alt="Project 3 screenshot">
                         <figcaption>Project 3 screenshot</figcaption>
                     </figure>
                     <div class="project-info">
@@ -136,7 +158,7 @@
                 </div>
                 <div class="project-card">
                     <figure>
-                        <img src="project4.jpg" alt="Project 4 screenshot">
+                        <img src="projec4.jpg" alt="Project 4 screenshot">
                         <figcaption>Project 4 screenshot</figcaption>
                     </figure>
                     <div class="project-info">
@@ -220,22 +242,6 @@
         </section>
        
     </main>
-
-<!-- Lightbox Modal for Image Gallery -->
-<div id="lightbox" class="lightbox hidden">
-    <span class="close">&times;</span>
-    <img src="" alt="Lightbox Image" class="lightbox-image">
-    <button class="prev">Previous</button>
-    <button class="next">Next</button>
-</div>
-
-<!-- Certificate Viewer Modal -->
-<div id="certificate-viewer" class="certificate-viewer hidden">
-    <span class="close">&times;</span>
-    <img src="" alt="Certificate" class="certificate-viewer-image">
-    <button class="prev">Previous</button>
-    <button class="next">Next</button>
-</div>
-    <script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 </html>
