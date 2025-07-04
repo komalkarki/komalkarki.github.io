@@ -95,29 +95,27 @@
 </div>
 </div>
         </section>
-        <!-- Hidden Certificate Gallery Section -->
-        <section id="certificate-gallery" class="gallery-page hidden">
-            <h1>Certificate Gallery</h1>
-            <div class="certificate-grid">
-                <img src="c1.jpg" alt="Certificate 1" data-index="0">
-                <img src="c2.jpg" alt="Certificate 2" data-index="1">
-                <img src="c3.jpg" alt="Certificate 3" data-index="2">
-                <img src="c4.jpg" alt="Certificate 3" data-index="3">
-                <!-- Add more certificates as needed -->
-            </div>
-            <button class="back-button">Back to Gallery</button>
-            <!-- Certificate Viewer Modal -->
+    <!-- Hidden Certificate Gallery Section -->
+<section id="certificate-gallery" class="gallery-page hidden">
+    <h1>Certificate Gallery</h1>
+    <div class="certificate-grid">
+        <img src="c1.jpg" alt="Certificate 1" data-index="0">
+        <img src="c2.jpg" alt="Certificate 2" data-index="1">
+        <img src="c3.jpg" alt="Certificate 3" data-index="2">
+        <img src="c4.jpg" alt="Certificate 4" data-index="3">
+        <img src="c5.jpg" alt="Certificate 5" data-index="4">
+        <!-- Add more certificates as needed -->
+    </div>
+    <button class="back-button">Back to Gallery</button>
+</section>
+
+<!-- Certificate Viewer Modal (moved outside the section) -->
 <div id="certificate-viewer" class="certificate-viewer hidden">
-    <span class="close">&times;</span>
+    <span class="close">×</span>
     <img src="" alt="Certificate" class="certificate-viewer-image">
     <button class="prev">Previous</button>
-    <button class="next">Next</button><!-- Certificate Viewer Modal -->
-    <div id="certificate-viewer" class="certificate-viewer hidden">
-        <span class="close">&times;</span>
-        <img src="" alt="Certificate" class="certificate-viewer-image">
-        <button class="prev">Previous</button>
-        <button class="next">Next</button>
-        </section>
+    <button class="next">Next</button>
+</div>
 
 
         <section id="projects">
@@ -176,16 +174,16 @@
             <div class="video-carousel">
                 <div class="carousel-inner">
                     <!-- Slide 1 -->
-                    <div class="carousel-item active">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/SrJXHEv5fUc?si=iOQmUncL_n80SQUX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="carousel-item active">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/SrJXHEv5fUc?si=iOQmUncL_n80SQUX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                        <h3>My first Creation</h3>
-                    </div>
+                            <h3>My first Creation</h3>
+                        </div>
                     <!-- Slide 2 -->
-                    <div class="carousel-item">
-                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-                        <h3>Video Title 2</h3>
-                    </div>
+                        <div class="carousel-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/8I_kZCEBARg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <h3>My second Creation</h3>
+                        </div>
                     <!-- Add more slides as needed -->
                 </div>
                 <button class="carousel-control prev">‹</button>

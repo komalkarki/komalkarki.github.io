@@ -1,7 +1,7 @@
 :root {
-    --background-color: #0A1428; /* Deep cybernetic blue */
-    --text-color: #D9E8F5; /* Light digital white */
-    --accent-color: #00CED1; /* Default: Electric turquoise */
+    --background-color: #0A1428;
+    --text-color: #D9E8F5;
+    --accent-color: #00CED1;
 }
 
 * {
@@ -70,7 +70,7 @@ nav a:hover {
     transform: scale(1.2);
     box-shadow: 0 0 20px var(--accent-color);
 }
-
+    
 nav a::after {
     content: attr(data-label);
     position: absolute;
@@ -100,10 +100,69 @@ nav a.active {
     animation: none;
 }
 
+nav a.active::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 @keyframes pulse {
     0%, 100% { box-shadow: 0 0 10px var(--accent-color); }
     50% { box-shadow: 0 0 15px var(--accent-color); }
 }
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        top: auto;
+        transform: none;
+        width: 100%;
+        background: var(--background-color);
+        padding: 10px;
+    }
+    
+
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        width: 15px;
+        height: 15px;
+    }
+
+    nav a::after {
+        display: none;
+    }
+
+    nav a.active::after {
+        display: none;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        padding-left: 20px;
+    }
+
+    .gallery-folders {
+        flex-direction: column;
+    }
+
+    .social-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .carousel-item iframe {
+        height: 200px;
+    }
+}
+
+/* Remaining CSS unchanged; full version in thinking trace */
 
 /* Theme Switcher Styles */
 .theme-switcher {
@@ -433,7 +492,6 @@ p{
     max-height: 80vh;
     animation: slideIn 0.3s ease-in-out;
 }
-
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -670,11 +728,13 @@ figcaption {
 
 
 
+
+
 /* Future Interface - Typing Animation */
 .vision-list {
-    list-style: none; /* Remove default bullets */
+    list-style: none;
     padding: 0;
-    max-width: 1020px; /* Limit width for readability */
+    max-width: 1020px;
     margin: 20px auto;
 }
 
@@ -683,15 +743,17 @@ figcaption {
     color: var(--text-color);
     margin-bottom: 15px;
     position: relative;
-    padding-left: 25px; /* Space for custom bullet */
-    opacity: 0; /* Start hidden for animation */
-    overflow: hidden; /* Hide text overflow during typing */
-    white-space: nowrap; /* Keep text on one line */
-    border-right: 2px solid var(--accent-color); /* Cursor effect */
+    padding-left: 25px;
+    opacity: 1;
+    clip-path: inset(0 100% 0 0); /* Hide text initially for all screens */
+    overflow: hidden;
+    white-space: nowrap; /* Single-line for desktop */
+    border-right: 2px solid var(--accent-color);
+    display: inline-block;
 }
 
 .vision-list li::before {
-    content: "›"; /* Custom bullet (right arrow) */
+    content: "›";
     position: absolute;
     left: 0;
     color: var(--accent-color);
@@ -701,16 +763,38 @@ figcaption {
 
 /* Animation keyframes */
 @keyframes typing {
-    from { width: 0; opacity: 1; }
-    to { width: 100%; opacity: 1; }
+    from { clip-path: inset(0 100% 0 0); }
+    to { clip-path: inset(0 0 0 0); }
+}
+
+@keyframes typing-mobile {
+    from { clip-path: inset(0 100% 0 0); }
+    to { clip-path: inset(0 0 0 0); }
 }
 
 @keyframes blink {
     50% { border-color: transparent; }
 }
 
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .vision-list {
+        max-width: 100%;
+        padding: 0 20px;
+    }
 
+    .vision-list li {
+        font-size: 0.9em; /* Smaller font for mobile */
+        padding-left: 20px;
+        text-align: left;
+        white-space: normal; /* Allow text wrapping */
+        display: block;
+    }
 
+    .vision-list li::before {
+        font-size: 1.2em;
+    }
+}
 /* Theme Variations */
 body.theme-turquoise { --accent-color: #1bb5b8; }
 body.theme-purple { 
