@@ -1,0 +1,39 @@
+#chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  background: #111;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: sans-serif;
+  z-index: 9999;
+}
+
+#chatMessages {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 5px;
+}
+
+.userMsg {
+  text-align: right;
+  margin: 5px 0;
+}
+
+.botMsg {
+  text-align: left;
+  margin: 5px 0;
+}
+
+#chatInput {
+  width: 70%;
+  padding: 5px;
+}
+
+button {
+  width: 25%;
+  padding: 5px;
+  cursor: pointer;
+}
