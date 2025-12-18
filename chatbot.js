@@ -8,7 +8,7 @@ async function sendChat() {
   messages.innerHTML += `<div class="userMsg">${message}</div>`;
 
   try {
-    const res = await fetch("https://replit.com/@kamalkarkeee86/kamal-portfolio-ai/chat", {
+    const res = await fetch("https://f4331a19-8591-4533-a54c-28a6663cc9ce-00-3e6l079fsznd0.worf.replit.dev/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message })
