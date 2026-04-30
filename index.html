@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kamal’s CyberGrid</title>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-cards.css">
 
 </head>
 <body>
@@ -50,13 +52,228 @@
         </section>
        
 
-        <section id="personal">
-            <h1> Cyber Core - About Me</h1>
-            <figure>
-                <img src="dp.JPG" alt="">
-               
-            </figure>
-            <p>Hi, I’m Komal, a full-stack developer shaping the future of the web. I build innovative solutions with a passion for code and design. <br> I am currently learning as well as implementing my skills in web development trying to be better than what i was ever. <br> I also have plans on pursuing Data analytics as my major academic and working on the same field to build my future carrier. My intrests are learning  <br>new things, enhancing my existing skills and contuniously working to meet my better future self.</p>
+        <section id="personal" class="about">
+            <h1>Cyber Core - About Me</h1>
+
+                        <div class="about-shell">
+                                <!-- Replaced About Top with strict Cyber-Core layout (left: profile, right: bio) -->
+                                <div class="cyber-about-v2">
+                                        <div class="cyber-left">
+                                        <div class="cyber-frame" role="figure" aria-label="Profile frame">
+                                            <figure class="cyber-image">
+                                                <img src="dp.JPG" alt="Komal portrait">
+                                            </figure>
+                                        </div>
+                                    </div>
+
+                                    <div class="cyber-right">
+                                        <div class="cyber-bio">
+                                            <div class="cyber-quote">“</div>
+                                          <svg class="cyber-dotgrid-svg" viewBox="0 0 100 60" aria-hidden="true">
+                                         <!-- Row 1 -->
+                                          <circle cx="10" cy="10" r="2.2"></circle>
+                                          <circle cx="30" cy="10" r="2.2"></circle>
+                                          <circle cx="50" cy="10" r="2.2"></circle>
+                                          <circle cx="70" cy="10" r="2.2"></circle>
+                                           
+                                           <!-- Row 2 -->
+                                            <circle cx="10" cy="30" r="2.2"></circle>
+                                            <circle cx="30" cy="30" r="2.2"></circle>
+                                            <circle cx="50" cy="30" r="2.2"></circle>
+                                            <circle cx="70" cy="30" r="2.2"></circle>
+                                            
+                                            <!-- Row 3 -->
+                                             <circle cx="10" cy="50" r="2.2"></circle>
+                                             <circle cx="30" cy="50" r="2.2"></circle>
+                                             <circle cx="50" cy="50" r="2.2"></circle>
+                                             <circle cx="70" cy="50" r="2.2"></circle>
+                                            
+                                            </svg>
+  
+                                            <svg class="cyber-bio-border" viewBox="0 0 680 420" preserveAspectRatio="none" aria-hidden="true">
+                                                <path class="bio-base draw-path" d="M20 0 H660 L680 20 V400 L660 420 H20 L0 400 V20 Z" fill="none" />
+                                                <path class="bio-comet" pathLength="100" d="M20 0 H660 L680 20 V400 L660 420 H20 L0 400 V20 Z" fill="none" />
+                                            </svg>
+                                            <div class="cyber-bio-text">
+                                               <p>Hi, I’m Komal—a <span class="cyber-key">Full-Stack Developer</span> and <span class="cyber-key">Content Creator</span> currently pursuing a degree in <span class="cyber-key">Data Analysis</span> in Italy.</p>
+                                                <hr>
+                                                <p>Driven by a passion for building innovative, <span class="cyber-key">AI-powered solutions</span>, I am constantly shipping projects to grow beyond yesterday's version of myself.</p>
+                                                <hr>
+                                               <p>I am currently seeking <span class="cyber-key">internships</span> and <span class="cyber-key">full-time positions</span> to merge data insights with web development to shape the digital frontier.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                <div class="about-cards about-cards--horizontal" data-accordion="single">
+                    <div class="about-card-row" aria-label="Skills cards">
+                        <div class="skill-tab card">
+                            <div class="card-inner">
+                                <div class="card-face card-front">
+                                    <button class="about-card" type="button" aria-expanded="false" aria-controls="about-panel-tech" id="about-card-tech">
+                                        <span class="about-card__title">Tech Skills</span>
+                                        <span class="about-card__desc">Technologies and tools I work with to build powerful solutions.</span>
+                                        <span class="about-card__cta reveal-button">Click to reveal</span>
+                                    </button>
+                                </div>
+                                <div class="card-face card-back">
+                                    <div class="about-panel skills-content" id="about-panel-tech" role="region" aria-labelledby="about-card-tech" aria-hidden="true">
+                                        <div class="about-panel__inner">
+                                            <ul class="skill-list">
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">JavaScript</span>
+                                                    <span class="skill-item__value">85%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="85"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">HTML &amp; CSS</span>
+                                                    <span class="skill-item__value">90%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="90"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">React</span>
+                                                    <span class="skill-item__value">75%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="75"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Node.js</span>
+                                                    <span class="skill-item__value">70%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="70"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Python</span>
+                                                    <span class="skill-item__value">65%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="65"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-tab card">
+                            <div class="card-inner">
+                                <div class="card-face card-front">
+                                    <button class="about-card" type="button" aria-expanded="false" aria-controls="about-panel-soft" id="about-card-soft">
+                                        <span class="about-card__title">Interpersonal Skills</span>
+                                        <span class="about-card__desc">People skills that help me collaborate, communicate and lead effectively.</span>
+                                        <span class="about-card__cta reveal-button">Click to reveal</span>
+                                    </button>
+                                </div>
+                                <div class="card-face card-back">
+                                    <div class="about-panel skills-content" id="about-panel-soft" role="region" aria-labelledby="about-card-soft" aria-hidden="true">
+                                        <div class="about-panel__inner">
+                                            <ul class="skill-list">
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Communication</span>
+                                                    <span class="skill-item__value">88%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="88"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Teamwork</span>
+                                                    <span class="skill-item__value">84%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="84"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Leadership</span>
+                                                    <span class="skill-item__value">78%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="78"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Problem Solving</span>
+                                                    <span class="skill-item__value">86%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="86"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Adaptability</span>
+                                                    <span class="skill-item__value">82%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="82"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-tab card">
+                            <div class="card-inner">
+                                <div class="card-face card-front">
+                                    <button class="about-card" type="button" aria-expanded="false" aria-controls="about-panel-extra" id="about-card-extra">
+                                        <span class="about-card__title">Extra Skills &amp; Hobbies</span>
+                                        <span class="about-card__desc">Creative pursuits and extra skills that fuel my imagination.</span>
+                                        <span class="about-card__cta reveal-button">Click to reveal</span>
+                                    </button>
+                                </div>
+                                <div class="card-face card-back">
+                                    <div class="about-panel skills-content" id="about-panel-extra" role="region" aria-labelledby="about-card-extra" aria-hidden="true">
+                                        <div class="about-panel__inner">
+                                            <ul class="skill-list">
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Storytelling / Content</span>
+                                                    <span class="skill-item__value">80%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="80"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Creativity</span>
+                                                    <span class="skill-item__value">85%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="85"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Public Speaking</span>
+                                                    <span class="skill-item__value">74%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="74"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Learning Velocity</span>
+                                                    <span class="skill-item__value">90%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="90"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            <li class="skill-item">
+                                                <div class="skill-item__top">
+                                                    <span class="skill-item__name">Community / Clubs</span>
+                                                    <span class="skill-item__value">76%</span>
+                                                </div>
+                                                <div class="skill-meter" data-level="76"><span class="skill-meter__fill"></span></div>
+                                            </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 <link rel="stylesheet" href="chatbot.css">
@@ -245,7 +462,8 @@
         </section>
        
     </main>
- <script src="script.js"></script>
+    <script src="script.js"></script>
+    <script src="about-cards.js"></script>
 
 
 </body>

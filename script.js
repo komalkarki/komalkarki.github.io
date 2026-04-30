@@ -200,4 +200,35 @@ window.addEventListener('resize', () => {
         delay += duration + 500;
     });
 });
+
+function prepareSvgPath(path) {
+    if (!path) return;
+    try {
+        const totalLength = path.getTotalLength();
+        path.style.strokeDasharray = `${totalLength}`;
+        path.style.strokeDashoffset = `${totalLength}`;
+    } catch (error) {
+        // Ignore SVG length issues in unsupported environments
+    }
+}
+
+function initCyberAboutAnimations() {
+    const cyber = document.querySelector('.cyber-about-v2');
+    if (!cyber) return;
+
+    const drawPaths = cyber.querySelectorAll('.draw-path, .bio-base');
+    drawPaths.forEach((path) => prepareSvgPath(path));
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            cyber.classList.add('cyber-loaded');
+            observer.disconnect();
+        });
+    }, { threshold: 0.35 });
+
+    observer.observe(cyber);
+}
+
+initCyberAboutAnimations();
 });

@@ -2,6 +2,8 @@
     --background-color: #0A1428;
     --text-color: #D9E8F5;
     --accent-color: #00CED1;
+    --bg-rgb: 10, 20, 40;
+    --border-color: var(--accent-color);
 }
 
 * {
@@ -299,20 +301,6 @@ p{
     font-size: 1.2em;
     margin: 10px 0;
 }
-/* Personal Section */
-#personal img {
-    border-radius: 50%;
-    border: 3px solid var(--accent-color);
-    width: 220px;
-    box-shadow: 0 0 15px var(--accent-color);
-    transition: transform 0.3s ease;
-    margin-top: auto;
-}
-
-#personal img:hover {
-    transform: scale(1.1);
-}
-
 /* Gallery section */
 /* New Gallery Styles */
 #gallery {
@@ -796,19 +784,30 @@ figcaption {
     }
 }
 /* Theme Variations */
-body.theme-turquoise { --accent-color: #1bb5b8; }
+body.theme-turquoise { --accent-color: #1bb5b8; --bg-rgb: 10, 20, 40; --border-color: var(--accent-color); }
 body.theme-purple { 
-    --accent-color: #8d47a8; }
+    --accent-color: #8d47a8;
+    --bg-rgb: 22, 14, 34;
+    --border-color: var(--accent-color);
+}
 body.theme-pink {
-     --accent-color: #cd508e; }
+     --accent-color: #cd508e;
+     --bg-rgb: 28, 12, 22;
+     --border-color: var(--accent-color);
+}
 body.theme-dark-black {
     --background-color: #141414;
     --text-color: #dfdfdf;
     --accent-color: #e0e0e0;
+    --bg-rgb: 20, 20, 20;
+    --border-color: var(--accent-color);
 }
 body.theme-neon-green { 
     --background-color:rgb(5, 8, 3);
-    --accent-color: #34b91c; }
+    --accent-color: #34b91c;
+    --bg-rgb: 5, 8, 3;
+    --border-color: var(--accent-color);
+}
 /* Smooth Transitions */
 nav a, .project-card, h1, figcaption, iframe, .social-links img {
     transition: all 0.5s ease;
